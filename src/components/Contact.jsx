@@ -84,7 +84,7 @@ const Contact = () => {
       className='w-10 h-10 flex items-center justify-center rounded-full shadow-md'
     >
       <img
-        src='src/assets/github.png'
+        src='/src/assets/github.png'
         alt='GitHub'
         className='w-10 h-10'
       />
@@ -96,7 +96,7 @@ const Contact = () => {
       className='w-10 h-10 flex items-center justify-center rounded-full shadow-md'
     >
       <img
-        src='/src/assets/linkedin.png'
+        src='Portfolio/src/assets/linkedin.png'
         alt='LinkedIn'
         className='w-10 h-10'
       />
