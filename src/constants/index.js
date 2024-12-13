@@ -173,6 +173,10 @@ const projects = [
       },
       {
         name: "webscraping",
+        color: "green-text-gradient",
+      },
+      {
+        name: "machinelearning",
         color: "pink-text-gradient",
       },
     ],
@@ -213,6 +217,10 @@ const projects = [
         name: "firebase",
         color: "green-text-gradient",
       },
+      {
+        name: "webtechnology",
+        color: "pink-text-gradient",
+      },
     ],
     image: tripguide,
     source_code_link: "https://github.com/AkshayKarthickMS/Smart-Store-IoT",
@@ -226,6 +234,14 @@ const projects = [
         name: "python",
         color: "blue-text-gradient",
       },
+      {
+        name: "machinelearning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ai",
+        color: "pink-text-gradient",
+      },
     ],
     image: retail,
     source_code_link: "https://github.com/AkshayKarthickMS/Smart-Retail-Pricing",
@@ -238,6 +254,14 @@ const projects = [
       {
         name: "python",
         color: "blue-text-gradient",
+      },
+      {
+        name: "machinelearning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ai",
+        color: "pink-text-gradient",
       },
     ],
     image: hand,
