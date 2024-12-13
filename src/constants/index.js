@@ -109,7 +109,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "ML Engineer",
+    title: "Machine Learning Intern",
     company_name: "Prodigy InfoTech",
     icon: shopify,
     iconBg: "#383E56",
@@ -122,7 +122,7 @@ const experiences = [
     ],
   },
   {
-    title: "Web-IoT Developer",
+    title: "Web-IoT Development Intern",
     company_name: "Universiti Sains Islam Malaysia",
     icon: tesla,
     iconBg: "#E6DEDD",
@@ -135,7 +135,7 @@ const experiences = [
     ],
   },
   {
-    title: "AI Engineer",
+    title: "AI Intern",
     company_name: "Dsignz Media",
     icon: starbucks,
     iconBg: "#383E56",
@@ -148,7 +148,7 @@ const experiences = [
     ],
   },
   {
-    title: "Data Analyst",
+    title: "Data Analyst Intern",
     company_name: "Dsignz Media",
     icon: meta,
     iconBg: "#E6DEDD",
