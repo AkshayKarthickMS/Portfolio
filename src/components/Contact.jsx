@@ -33,16 +33,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_lxhj7qs',
+        'template_20w6bic',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Akshay Karthick M S",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "akshaykarthick3@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'udYUMY8qtr7z6qEdb'
       )
       .then(
         () => {
@@ -75,6 +75,44 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
 
+        {/* Social Links Section */}
+  <div className='mt-6 flex gap-6 items-center'>
+    <a
+      href='https://github.com/AkshayKarthickMS'
+      target='_blank'
+      rel='noopener noreferrer'
+      className='w-10 h-10 flex items-center justify-center rounded-full shadow-md'
+    >
+      <img
+        src='/src/assets/github.png'
+        alt='GitHub'
+        className='w-10 h-10'
+      />
+    </a>
+    <a
+      href='https://www.linkedin.com/in/akshay-karthick-m-s-48a880268/'
+      target='_blank'
+      rel='noopener noreferrer'
+      className='w-10 h-10 flex items-center justify-center rounded-full shadow-md'
+    >
+      <img
+        src='/src/assets/linkedin.png'
+        alt='LinkedIn'
+        className='w-10 h-10'
+      />
+    </a>
+    <a
+      href='https://mail.google.com/mail/?view=cm&fs=1&to=akshaykarthick3@gmail.com'
+      target='_blank'
+      className='w-10 h-10 flex items-center justify-center rounded-full shadow-md'
+    >
+      <img
+        src='/src/assets/gmail.png'
+        alt='Email'
+        className='w-10 h-10'
+      />
+    </a>
+    </div>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
