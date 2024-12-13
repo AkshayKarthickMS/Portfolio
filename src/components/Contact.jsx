@@ -1,7 +1,9 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import githubIcon from "../assets/github.png';
+import githubIcon from "../assets/github.png";
+import linkedinIcon from "../assets/linkedin.png";
+import gmailIcon from "../assets/gmail.png";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -96,7 +98,7 @@ const Contact = () => {
       className='w-10 h-10 flex items-center justify-center rounded-full shadow-md'
     >
       <img
-        src='Portfolio/src/assets/linkedin.png'
+        src={linkedinIcon}
         alt='LinkedIn'
         className='w-10 h-10'
       />
@@ -107,7 +109,7 @@ const Contact = () => {
       className='w-10 h-10 flex items-center justify-center rounded-full shadow-md'
     >
       <img
-        src='/src/assets/gmail.png'
+        src={gmailIcon}
         alt='Email'
         className='w-10 h-10'
       />
