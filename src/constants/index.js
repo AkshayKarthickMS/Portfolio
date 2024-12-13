@@ -147,16 +147,6 @@ const experiences = [
       "Collaborating with cross-functional teams to test and optimize the AI system for real-time accuracy and performance.",
     ],
   },
-  {
-    title: "Data Analyst Intern",
-    company_name: "Dsignz Media",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "November 2024 - Present",
-    points: [
-      "Working extensively with AWS."
-    ],
-  },
 ];
 
 const testimonials = [];
