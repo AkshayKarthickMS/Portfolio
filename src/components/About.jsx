@@ -53,6 +53,20 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
+      {/* Add Resume Section */}
+      <div className='mt-10'>
+        <a
+          href='https://akshaykarthick-resume.tiiny.site/'
+          target='_blank'
+          rel='noopener noreferrer'>
+        <button
+          type='button'
+          className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'>
+          View Resume
+        </button>
+        </a>
+      </div>
+
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
