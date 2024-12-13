@@ -63,10 +63,6 @@ const services = [
     title: "Data Analysis",
     icon: backend,
   },
-  {
-    title: "Artificial Intelligence",
-    icon: ai,
-  },
 ];
 
 const technologies = [
