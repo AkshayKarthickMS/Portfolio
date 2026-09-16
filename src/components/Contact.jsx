@@ -1,11 +1,12 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import githubIcon from "../assets/github.png";
-import linkedinIcon from "../assets/linkedin.png";
-import gmailIcon from "../assets/gmail.png";
+import { github as githubIcon, linkedin as linkedinIcon, gmail as gmailIcon } from "../assets";
+
+const CONTACT_EMAIL = "akshaykarthickms@gmail.com";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
+import LazyMount from "./LazyMount";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -41,7 +42,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Akshay Karthick M S",
           from_email: form.email,
-          to_email: "akshaykarthick3@gmail.com",
+          to_email: CONTACT_EMAIL,
           message: form.message,
         },
         'udYUMY8qtr7z6qEdb'
@@ -104,8 +105,9 @@ const Contact = () => {
       />
     </a>
     <a
-      href='https://mail.google.com/mail/?view=cm&fs=1&to=akshaykarthick3@gmail.com'
+      href={`https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}`}
       target='_blank'
+      rel='noopener noreferrer'
       className='w-10 h-10 flex items-center justify-center rounded-full shadow-md'
     >
       <img
@@ -113,6 +115,14 @@ const Contact = () => {
         alt='Email'
         className='w-10 h-10'
       />
+    </a>
+    <a
+      href='https://leetcode.com/u/AkshayKarthickMS/'
+      target='_blank'
+      rel='noopener noreferrer'
+      className='h-10 flex items-center justify-center rounded-full shadow-md px-4 bg-tertiary text-white text-[14px] font-medium'
+    >
+      LeetCode
     </a>
     </div>
         <form
@@ -167,7 +177,9 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <EarthCanvas />
+        <LazyMount minHeight='100%' className='w-full h-full'>
+          <EarthCanvas />
+        </LazyMount>
       </motion.div>
     </div>
   );

@@ -1,31 +1,16 @@
 import {
-  mobile,
-  backend,
-  creator,
   web,
+  backend,
   javascript,
-  typescript,
   html,
   css,
-  reactjs,
-  redux,
-  tailwind,
   brain,
-  nodejs,
-  mongodb,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  hand,
-  retail,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  caterpillar,
+  dsignz,
+  usim,
   python,
   c,
   r,
@@ -33,235 +18,189 @@ import {
   ai,
   mysql,
   flask,
+  aws,
+  mchtrack,
+  icliniq,
 } from "../assets";
 
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  { id: "about", title: "About" },
+  { id: "experience", title: "Experience" },
+  { id: "skills", title: "Skills" },
+  { id: "work", title: "Work" },
+  { id: "achievements", title: "Achievements" },
+  { id: "contact", title: "Contact" },
 ];
 
 const services = [
   {
-    title: "Web Development",
-    icon: web,
-  },
-  {
-    title: "Deep Learning",
+    title: "Machine Learning & DL",
     icon: brain,
   },
   {
-    title: "Data Analysis",
-    icon: backend,
+    title: "Generative AI & LLMs",
+    icon: ai,
   },
   {
-    title: "Artificial Intelligence",
-    icon: ai,
+    title: "Cloud & Data Engineering",
+    icon: web,
+  },
+  {
+    title: "Analytics & Dashboards",
+    icon: backend,
   },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "C",
-    icon: c,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "R",
-    icon: r,
-  },
-  {
-    name: "Tensorflow",
-    icon: tf,
-  },
-  {
-    name: "MySql",
-    icon: mysql,
-  },
-  {
-    name: "Flask",
-    icon: flask,
-  },
+  { name: "Python", icon: python },
+  { name: "SQL", icon: mysql },
+  { name: "TensorFlow", icon: tf },
+  { name: "AWS", icon: aws },
+  { name: "Docker", icon: docker },
+  { name: "Flask", icon: flask },
+  { name: "Git", icon: git },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "R", icon: r },
+  { name: "Figma", icon: figma },
 ];
 
 const experiences = [
   {
-    title: "Machine Learning Intern",
-    company_name: "Prodigy InfoTech",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "February 2024",
+    title: "College Intern",
+    company_name: "Caterpillar Inc.",
+    icon: caterpillar,
+    iconBg: "#151030",
+    date: "January 2026 - July 2026",
     points: [
-      "Developing machine learning models for house and gold price prediction using regression techniques in Python.",
-      "Working on hand recognition projects using computer vision and deep learning algorithms to improve accuracy and efficiency.",
-      "Implementing image recognition and classification systems, utilizing frameworks like TensorFlow and Keras to build robust models.",
-      "Collaborating with the team to fine-tune models, optimizing their performance and ensuring scalability for future use cases.",
+      "Diagnosed a distribution flaw in the initial zip-file release of a PPT automation tool that exposed internal architecture; redesigned deployment as a single-click .exe using PyInstaller, eliminating codebase exposure for non-technical end users.",
+      "Engineered a PyQt5-based supplier capacity planning and procurement automation app that extracted 50+ tables, charts, and images from 6 Excel macro workbooks and auto-generated PowerPoint reports using OpenPyXL, python-pptx, and Pillow, cutting a multi-hour manual process to under 10 minutes.",
+      "Validated automation output against a client-provided QC checklist, catching data and layout bugs in 5 of 34 slides (~15%) prior to release.",
+      "Built a manufacturing scheduler automation solution for Solar Turbines covering BOM processing, operation routing, assembly sequencing, and production time estimation for 100+ components using SQL and Power Apps; caught 7 scheduling defects pre-deployment and reduced manual scheduling effort by 90%.",
     ],
   },
   {
-    title: "Web-IoT Development Intern",
+    title: "AI & Cloud Engineer Intern",
+    company_name: "Dsignz Media",
+    icon: dsignz,
+    iconBg: "#151030",
+    date: "October 2024 - May 2025",
+    points: [
+      "Designed an AWS cost analytics platform with ETL pipelines that extracted, transformed, and loaded AWS CUR data into 20+ Power BI & Tableau dashboards using AWS Glue, EC2, S3, CloudWatch, Boto3, Docker, ECR, and ECS, improving cost allocation accuracy by 30%.",
+      "Integrated a RAG-based cloud assistant leveraging embeddings, semantic search, and FAISS over 1,000+ AWS documentation pages, reducing information retrieval time by 80% for engineering teams.",
+    ],
+  },
+  {
+    title: "IoT Software Intern",
     company_name: "Universiti Sains Islam Malaysia",
-    icon: tesla,
-    iconBg: "#E6DEDD",
+    icon: usim,
+    iconBg: "#151030",
     date: "July 2024",
     points: [
-      "Designing and developing a fully functional website for a Goat Management System, integrating IoT devices for real-time data monitoring.",
-      "Utilizing HTML, CSS, JavaScript, and Flask to create an interactive, user-friendly frontend and dynamic backend.",
-      "Implementing SQLite for efficient database management, ensuring smooth storage and retrieval of system data.",
-      "Working closely with the IoT team to ensure seamless integration of sensors and devices for accurate real-time data updates.",
+      "Built an RFID-based livestock management platform supporting animal registration, health monitoring, and feed planning using Python, Flask, SQLite, Arduino, REST APIs, and WebSocket communication.",
+      "Gathered requirements directly from farm operators, reducing manual record-keeping time by 95% in a pilot farm.",
     ],
+  },
+];
+
+const education = [
+  {
+    degree: "B.Tech in Artificial Intelligence and Data Science",
+    school: "Coimbatore Institute of Technology, Coimbatore, Tamil Nadu",
+    date: "Graduated 2026",
+    detail: "CGPA: 8.93 / 10",
   },
   {
-    title: "AI Intern",
-    company_name: "Dsignz Media",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "October 2024 - November 2024",
-    points: [
-      "Developing a facial recognition application for a smart attendance system using Python, Dart, and Flask, significantly reducing manual attendance efforts.",
-      "Designing and implementing a Content Management System (CMS) using HTML, CSS, and JavaScript to enable smooth management of website content.",
-      "Integrating advanced algorithms for facial recognition, improving system security and user experience.",
-      "Collaborating with cross-functional teams to test and optimize the AI system for real-time accuracy and performance.",
-    ],
+    degree: "Higher Secondary Certificate (HSC)",
+    school: "Sri Gopal Naidu Higher Secondary School, Coimbatore, Tamil Nadu",
+    date: "2022",
+    detail: "95.7%",
   },
+  {
+    degree: "Secondary School Leaving Certificate (SSLC)",
+    school: "Sri Gopal Naidu Higher Secondary School, Coimbatore, Tamil Nadu",
+    date: "2020",
+    detail: "97.2%",
+  },
+];
+
+const certifications = [
+  {
+    title: "Machine Learning with Python",
+    issuer: "IBM",
+  },
+  {
+    title: "Business Intelligence and Analytics",
+    issuer: "NPTEL - IIT Madras",
+    detail: "Score: 83%",
+  },
+  {
+    title: "Data Analysis using Python",
+    issuer: "IBM",
+  },
+];
+
+const achievements = [
+  {
+    title: "Datharm Foundation Appreciation Award",
+    detail:
+      "Nigeria, 2026 - Awarded $400 for developing an AI-powered immunization analytics platform enabling predictive healthcare interventions.",
+  },
+  {
+    title: "Best Project Award",
+    detail:
+      "iCliniq & Orane Healthcare, 2025 - Awarded for developing an agentic healthcare assistant leveraging LLMs, RAG, and PubMed retrieval for evidence-based medical responses.",
+  },
+  {
+    title: "Competitive Programming",
+    detail:
+      "Solved 250+ problems on LeetCode (@AkshayKarthickMS) and 100+ problems on GeeksforGeeks (@akshaykarr66b) across data structures, algorithms, and SQL.",
+  },
+];
+
+const codingProfiles = [
+  { name: "LeetCode", url: "https://leetcode.com/u/AkshayKarthickMS/" },
+  { name: "GitHub", url: "https://github.com/AkshayKarthickMS" },
 ];
 
 const testimonials = [];
 
 const projects = [
   {
-    name: "Fake Review Detection",
+    name: "AI-Powered MCHTrack — Zero-Dose Immunization Analytics",
     description:
-      "Developed a browser extension for scraping reviews from e-commerce websites and KNN to detect fake reviews with 84% accuracy.",
+      "Led a team of 4 to deliver an AI-driven immunization analytics platform for Datharm Foundation (Nigeria), processing 1,100+ beneficiary records and 80K+ facility visit records. Built and evaluated 3 classification models (Scikit-learn, XGBoost) that improved dropout-prediction accuracy from a 64% baseline to 84.4% (0.89 AUC-ROC), and designed 5 interactive Streamlit/Plotly dashboards surfacing 42% PCV dropout rates and 19% meningitis vaccine coverage gaps.",
     tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "webscraping",
-        color: "green-text-gradient",
-      },
-      {
-        name: "machinelearning",
-        color: "pink-text-gradient",
-      },
+      { name: "python", color: "blue-text-gradient" },
+      { name: "xgboost", color: "green-text-gradient" },
+      { name: "streamlit", color: "pink-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/AkshayKarthickMS/Fake-Review-Detection",
+    image: mchtrack,
+    source_code_link: "https://github.com/AkshayKarthickMS",
   },
   {
-    name: "College Event Management System",
+    name: "AI-Driven Medical Inquiry Response System",
     description:
-      "A website that showcases club and departmental events including registration functionality, which enhanced event awareness and participation by 30%",
+      "Developed an agentic healthcare assistant for iCliniq / Orane Healthcare using Llama 3.2, Mistral, RAG pipelines, and PubMed retrieval, achieving 95% response accuracy approval from reviewing doctors across multi-turn conversations. Built a FAISS vector database over 30+ medical literature documents with embeddings, semantic search, and conversation memory using Flask and SQLite.",
     tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "js",
-        color: "pink-text-gradient",
-      },
+      { name: "llm", color: "blue-text-gradient" },
+      { name: "rag", color: "green-text-gradient" },
+      { name: "faiss", color: "pink-text-gradient" },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/AkshayKarthickMS/BookMyBash",
-  },
-  {
-    name: "Smart Automated Store - IoT",
-    description:
-      "Engineered a smart automated store with automated cart and queue-less billing, resulting in 40% reduction in checkout time and increase in customer satisfaction by 25%",
-    tags: [
-      {
-        name: "embedded-c",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "webtechnology",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/AkshayKarthickMS/Smart-Store-IoT",
-  },
-  {
-    name: "Smart Retail Pricing",
-    description:
-      "Built a Neural Network model which suggests new product price based on demand and optimize stock level which enhances business by 70%",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "machinelearning",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ai",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: retail,
-    source_code_link: "https://github.com/AkshayKarthickMS/Smart-Retail-Pricing",
-  },
-  {
-    name: "Computer Vision",
-    description:
-      "Developed Hand Recognition system and Image Analyser & Classifier",
-    tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "machinelearning",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ai",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: hand,
-    source_code_link: "https://github.com/AkshayKarthickMS/Hand-Gesture-Recognition",
+    image: icliniq,
+    source_code_link: "https://github.com/AkshayKarthickMS",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  education,
+  certifications,
+  achievements,
+  codingProfiles,
+  testimonials,
+  projects,
+};

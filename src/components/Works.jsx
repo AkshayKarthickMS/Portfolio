@@ -1,7 +1,7 @@
 import React from "react";
-import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
+import Tilt from "./Tilt";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -31,6 +31,8 @@ const ProjectCard = ({
             src={image}
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
+            loading='lazy'
+            decoding='async'
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -97,4 +99,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

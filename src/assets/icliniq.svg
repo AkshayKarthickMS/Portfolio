@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230">
+  <defs>
+    <linearGradient id="iclbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151030"/>
+      <stop offset="100%" stop-color="#0d0a1f"/>
+    </linearGradient>
+    <linearGradient id="iclbubble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#804dee"/>
+      <stop offset="100%" stop-color="#4b2aa0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="230" fill="url(#iclbg)"/>
+  <!-- chat bubble (assistant) -->
+  <rect x="40" y="40" width="180" height="56" rx="16" fill="url(#iclbubble)"/>
+  <path d="M60 96 L60 116 L84 96 Z" fill="url(#iclbubble)"/>
+  <g fill="#ffffff" opacity="0.85">
+    <rect x="58" y="58" width="120" height="8" rx="4"/>
+    <rect x="58" y="74" width="80" height="8" rx="4"/>
+  </g>
+  <!-- chat bubble (user) -->
+  <rect x="180" y="110" width="180" height="48" rx="16" fill="#1d1836"/>
+  <path d="M340 158 L340 176 L316 158 Z" fill="#1d1836"/>
+  <g fill="#aaa6c3">
+    <rect x="200" y="126" width="100" height="8" rx="4"/>
+  </g>
+  <!-- pulse / vitals line -->
+  <polyline points="30,190 90,190 105,165 120,205 135,180 150,190 370,190" fill="none" stroke="#00cea8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- medical cross badge -->
+  <g transform="translate(340,40)">
+    <circle r="24" fill="#1d1836" stroke="#f272c8" stroke-width="2"/>
+    <rect x="-4" y="-13" width="8" height="26" rx="2" fill="#f272c8"/>
+    <rect x="-13" y="-4" width="26" height="8" rx="2" fill="#f272c8"/>
+  </g>
+  <text x="200" y="218" font-family="Arial, sans-serif" font-size="13" fill="#aaa6c3" text-anchor="middle" letter-spacing="1">AI MEDICAL ASSISTANT</text>
+</svg>

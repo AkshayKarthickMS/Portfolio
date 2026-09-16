@@ -1,53 +1,43 @@
-import logo from "./logo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
+import logo from "./logo.webp";
+import backend from "./backend.webp";
+import web from "./web.webp";
+import github from "./github.webp";
+import gmail from "./gmail.webp";
+import linkedin from "./linkedin.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import python from "./tech/python.png";
-import c from "./tech/c.png";
-import r from "./tech/r.png";
-import tf from "./tech/tf.png";
-import mysql from "./tech/mysql.png";
-import flask from "./tech/flask.png";
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-import ai from "./ai.png";
+import python from "./tech/python.webp";
+import c from "./tech/c.webp";
+import r from "./tech/r.webp";
+import tf from "./tech/tf.webp";
+import mysql from "./tech/mysql.webp";
+import flask from "./tech/flask.webp";
+import css from "./tech/css.webp";
+import docker from "./tech/docker.webp";
+import figma from "./tech/figma.webp";
+import git from "./tech/git.webp";
+import html from "./tech/html.webp";
+import javascript from "./tech/javascript.webp";
+import aws from "./tech/aws.webp";
+import ai from "./ai.webp";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import brain from "./brain.webp";
 
-import brain from "./brain.png";
-import retail from "./retail.png";
-import hand from "./hand.png";
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import caterpillar from "./company/caterpillar.svg";
+import dsignz from "./company/dsignz.svg";
+import usim from "./company/usim.svg";
 
+import mchtrack from "./mchtrack.svg";
+import icliniq from "./icliniq.svg";
 
 export {
   logo,
   backend,
-  creator,
-  mobile,
   web,
   github,
+  gmail,
+  linkedin,
   menu,
   close,
   css,
@@ -57,22 +47,7 @@ export {
   git,
   html,
   javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  hand,
-  retail,
-  carrent,
-  jobit,
-  tripguide,
+  aws,
   python,
   c,
   r,
@@ -80,4 +55,9 @@ export {
   ai,
   mysql,
   flask,
+  caterpillar,
+  dsignz,
+  usim,
+  mchtrack,
+  icliniq,
 };

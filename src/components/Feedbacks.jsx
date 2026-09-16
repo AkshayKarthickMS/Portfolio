@@ -44,6 +44,8 @@ const FeedbackCard = ({
 );
 
 const Feedbacks = () => {
+  if (testimonials.length === 0) return null;
+
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div

@@ -1,6 +1,20 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import {
+  About,
+  Contact,
+  Education,
+  Experience,
+  Achievements,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+} from "./components";
+import LazyMount from "./components/LazyMount";
+import { testimonials } from "./constants";
 
 const App = () => {
   return (
@@ -11,13 +25,17 @@ const App = () => {
           <Hero />
         </div>
         <About />
+        <Education />
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        <Achievements />
+        {testimonials.length > 0 && <Feedbacks />}
         <div className='relative z-0'>
           <Contact />
-          <StarsCanvas />
+          <LazyMount rootMargin='600px'>
+            <StarsCanvas />
+          </LazyMount>
         </div>
       </div>
     </BrowserRouter>
