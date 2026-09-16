@@ -52,7 +52,6 @@ import mchtrack from "./mchtrack.svg";
 import icliniq from "./icliniq.svg";
 
 import carrent from "./carrent.webp";
-import jobit from "./jobit.webp";
 import tripguide from "./tripguide.webp";
 import retail from "./retail.webp";
 import hand from "./hand.webp";
@@ -62,6 +61,7 @@ import aqi from "./projects/aqi.svg";
 import encryption from "./projects/encryption.svg";
 import geofencing from "./projects/geofencing.svg";
 import gold from "./projects/gold.svg";
+import brainTumor from "./projects/brain-tumor.svg";
 
 export {
   logo,
@@ -111,7 +111,6 @@ export {
   mchtrack,
   icliniq,
   carrent,
-  jobit,
   tripguide,
   retail,
   hand,
@@ -120,4 +119,5 @@ export {
   encryption,
   geofencing,
   gold,
+  brainTumor,
 };

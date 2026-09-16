@@ -61,12 +61,15 @@ const Achievements = () => {
           </h3>
           <div className="flex flex-col gap-4">
             {certifications.map((cert) => (
-              <div
+              <a
                 key={cert.title}
-                className="bg-tertiary p-5 rounded-2xl border-l-4 border-[#00cea8] flex items-start gap-3"
+                href={cert.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-tertiary hover:bg-black-100 transition-colors p-5 rounded-2xl border-l-4 border-[#00cea8] flex items-start gap-3"
               >
                 <span className="text-[20px]" aria-hidden>📜</span>
-                <div>
+                <div className="flex-1">
                   <h4 className="text-white text-[16px] font-semibold">
                     {cert.title}
                   </h4>
@@ -75,7 +78,8 @@ const Achievements = () => {
                     {cert.detail ? ` · ${cert.detail}` : ""}
                   </p>
                 </div>
-              </div>
+                <span className="text-secondary text-[12px] flex-shrink-0">View ↗</span>
+              </a>
             ))}
           </div>
         </motion.div>

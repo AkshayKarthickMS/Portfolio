@@ -58,6 +58,17 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+
+      {experience.certificateFile && (
+        <a
+          href={experience.certificateFile}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='mt-5 inline-block text-[13px] font-medium text-[#00cea8] hover:underline'
+        >
+          📜 View Certificate ↗
+        </a>
+      )}
     </VerticalTimelineElement>
   );
 };

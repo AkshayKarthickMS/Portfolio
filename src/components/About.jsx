@@ -85,11 +85,19 @@ const About = () => {
           variants={fadeIn("left", "spring", 0.2, 1)}
           className='flex-shrink-0 relative w-[240px] sm:w-[300px]'
         >
-          <div className='absolute inset-0 -z-10 rounded-full blur-[60px] opacity-30 bg-[#804dee]' />
+          {/* Outer soft glow for depth */}
+          <div className='absolute -inset-6 -z-20 rounded-[50%] blur-[70px] opacity-40 bg-gradient-to-br from-[#F2C811] via-[#f272c8] to-[#804dee]' />
+          {/* Designed backdrop shape the photo sits on, bridging the warm blazer tone with the site's cool palette */}
+          <div
+            className='absolute -inset-3 -z-10 rounded-[38%_62%_63%_37%/42%_38%_62%_58%]'
+            style={{
+              background: "linear-gradient(160deg, #F2C811 0%, #f272c8 48%, #804dee 100%)",
+            }}
+          />
           <img
             src={profile}
             alt='Akshay Karthick'
-            className='w-full h-auto object-contain drop-shadow-2xl'
+            className='relative w-full h-auto object-contain'
             loading='lazy'
             decoding='async'
           />

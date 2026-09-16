@@ -16,6 +16,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  source_code_links,
   live_demo_link,
 }) => {
   return (
@@ -76,6 +77,22 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
+
+        {source_code_links && (
+          <div className='mt-4 flex flex-wrap gap-2'>
+            {source_code_links.map((repo) => (
+              <a
+                key={repo.label}
+                href={repo.url}
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-[12px] text-secondary hover:text-white bg-black-100 px-3 py-1.5 rounded-lg transition-colors'
+              >
+                {repo.label} ↗
+              </a>
+            ))}
+          </div>
+        )}
       </Tilt>
     </motion.div>
   );

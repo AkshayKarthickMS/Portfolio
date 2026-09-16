@@ -39,7 +39,6 @@ import {
   mchtrack,
   icliniq,
   carrent,
-  jobit,
   tripguide,
   retail,
   hand,
@@ -48,6 +47,7 @@ import {
   encryption,
   geofencing,
   gold,
+  brainTumor,
 } from "../assets";
 
 export const navLinks = [
@@ -103,6 +103,7 @@ const experiences = [
     icon: caterpillar,
     iconBg: "#151030",
     date: "January 2026 - July 2026",
+    certificateFile: "/certificates/caterpillar-internship-certificate.pdf",
     points: [
       "Diagnosed a distribution flaw in the initial zip-file release of a PPT automation tool that exposed internal architecture; redesigned deployment as a single-click .exe using PyInstaller, eliminating codebase exposure for non-technical end users.",
       "Engineered a PyQt5-based supplier capacity planning and procurement automation app that extracted 50+ tables, charts, and images from 6 Excel macro workbooks and auto-generated PowerPoint reports using OpenPyXL, python-pptx, and Pillow, cutting a multi-hour manual process to under 10 minutes.",
@@ -117,20 +118,22 @@ const experiences = [
     icon: dsignz,
     iconBg: "#151030",
     date: "October 2024 - May 2025",
+    certificateFile: "/certificates/dsignz-media-internship-certificate.pdf",
     points: [
       "Designed an AWS cost analytics platform with ETL pipelines that extracted, transformed, and loaded AWS CUR data into 20+ Power BI & Tableau dashboards using AWS Glue, EC2, S3, CloudWatch, Boto3, Docker, ECR, and ECS, improving cost allocation accuracy by 30%.",
       "Integrated a RAG-based cloud assistant leveraging embeddings, semantic search, and FAISS over 1,000+ AWS documentation pages, reducing information retrieval time by 80% for engineering teams.",
     ],
   },
   {
-    title: "AI Engineer Intern",
+    title: "Academic Project Collaborator",
     company_name: "Orane Healthcare (iCliniq)",
     location: "Remote",
     icon: icliniqIcon,
     iconBg: "#0d0a1f",
     date: "August 2024 - April 2025",
+    certificateFile: "/certificates/orane-icliniq-project-certificate.pdf",
     points: [
-      "Developed an agentic healthcare assistant leveraging Llama 3.2, Mistral, RAG pipelines, and PubMed retrieval, validated through manual QA testing with practicing doctors across multi-turn conversations, achieving 95% response accuracy approval from reviewing doctors.",
+      "Completed an academic-curriculum project in collaboration with Orane Healthcare's iCliniq platform, developing an agentic healthcare assistant leveraging Llama 3.2, Mistral, RAG pipelines, and PubMed retrieval, validated through manual QA testing with practicing doctors across multi-turn conversations, achieving 95% response accuracy approval from reviewing doctors.",
       "Built a FAISS vector database using embeddings, semantic search, chunking, and cosine similarity to index 30+ medical literature documents, and implemented conversation memory and session management using Flask and SQLite for coherent, personalized multi-turn assistance.",
     ],
   },
@@ -141,6 +144,7 @@ const experiences = [
     icon: usim,
     iconBg: "#151030",
     date: "July 2024",
+    certificateFile: "/certificates/usim-internship-certificate.pdf",
     points: [
       "Built an RFID-based livestock management platform supporting animal registration, health monitoring, and feed planning using Python, Flask, SQLite, Arduino, REST APIs, and WebSocket communication.",
       "Gathered requirements directly from farm operators, reducing manual record-keeping time by 95% in a pilot farm.",
@@ -173,9 +177,28 @@ const education = [
 ];
 
 const certifications = [
-  { title: "Machine Learning with Python", issuer: "IBM" },
-  { title: "Business Intelligence and Analytics", issuer: "NPTEL - IIT Madras", detail: "Score: 83%" },
-  { title: "Data Analysis using Python", issuer: "IBM" },
+  {
+    title: "Machine Learning with Python",
+    issuer: "IBM",
+    file: "/certificates/ibm-machine-learning-with-python.pdf",
+  },
+  {
+    title: "Business Intelligence and Analytics",
+    issuer: "NPTEL - IIT Madras",
+    detail: "Score: 83% · Top 5%",
+    file: "/certificates/nptel-business-intelligence-analytics.pdf",
+  },
+  {
+    title: "Data Analysis using Python",
+    issuer: "IBM",
+    file: "/certificates/ibm-data-analysis-using-python.pdf",
+  },
+  {
+    title: "Blockchain and its Applications",
+    issuer: "NPTEL - IIT Kharagpur",
+    detail: "Score: 66%",
+    file: "/certificates/nptel-blockchain-and-its-applications.pdf",
+  },
 ];
 
 const achievements = [
@@ -258,8 +281,8 @@ const testimonials = [
   {
     testimonial:
       "Akshay's RFID livestock platform was built from real conversations with our farm operators, not assumptions. That grounding is why it cut record-keeping time by 95% in our pilot.",
-    name: "Dr. Sundar",
-    designation: "HOD",
+    name: "Dr. Sundresan Perumal",
+    designation: "Internship Supervisor",
     company: "Universiti Sains Islam Malaysia",
   },
   {
@@ -296,7 +319,12 @@ const projects = [
       { name: "streamlit", color: "pink-text-gradient" },
     ],
     image: mchtrack,
-    source_code_link: "https://github.com/AkshayKarthickMS",
+    source_code_link: "https://github.com/AkshayKarthickMS/Vaccine-Model",
+    source_code_links: [
+      { label: "Prediction Model", url: "https://github.com/AkshayKarthickMS/Vaccine-Model" },
+      { label: "Dashboard", url: "https://github.com/AkshayKarthickMS/Phase-1" },
+      { label: "Geospatial Viz", url: "https://github.com/AkshayKarthickMS/Map_Viz" },
+    ],
   },
   {
     name: "AI-Driven Medical Inquiry Response System",
@@ -323,16 +351,16 @@ const projects = [
     source_code_link: "https://github.com/AkshayKarthickMS/Fake-Review-Detection",
   },
   {
-    name: "College Event Management System (BookMyBash)",
+    name: "Brain Tumor Detection",
     description:
-      "A website that showcases club and departmental events with registration functionality, which enhanced event awareness and participation by 30%.",
+      "Built a Flask web application using OpenCV for MRI image preprocessing and a CNN classifier to detect brain tumors, with a demo interface for real-time predictions.",
     tags: [
-      { name: "html", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "js", color: "pink-text-gradient" },
+      { name: "python", color: "blue-text-gradient" },
+      { name: "opencv", color: "green-text-gradient" },
+      { name: "deeplearning", color: "pink-text-gradient" },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/AkshayKarthickMS/BookMyBash",
+    image: brainTumor,
+    source_code_link: "https://github.com/AkshayKarthickMS/Brain-Tumor-Detection",
   },
   {
     name: "Smart Automated Store - IoT",
