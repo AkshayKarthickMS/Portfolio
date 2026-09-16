@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230">
+  <defs>
+    <linearGradient id="geobg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151030"/>
+      <stop offset="100%" stop-color="#0d0a1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="230" fill="url(#geobg)"/>
+  <circle cx="200" cy="115" r="70" fill="none" stroke="#00cea8" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  <circle cx="200" cy="115" r="45" fill="#00cea8" opacity="0.15"/>
+  <g transform="translate(200,105)">
+    <path d="M0 -30 C16 -30 28 -18 28 -2 C28 18 0 38 0 38 C0 38 -28 18 -28 -2 C-28 -18 -16 -30 0 -30 Z" fill="#f272c8"/>
+    <circle cx="0" cy="-2" r="10" fill="#0d0a1f"/>
+  </g>
+  <g fill="#804dee">
+    <circle cx="120" cy="70" r="4"/>
+    <circle cx="290" cy="150" r="4"/>
+    <circle cx="260" cy="60" r="4"/>
+  </g>
+  <text x="200" y="218" font-family="Arial, sans-serif" font-size="13" fill="#aaa6c3" text-anchor="middle" letter-spacing="1">LOCATION-AWARE ECOMMERCE</text>
+</svg>

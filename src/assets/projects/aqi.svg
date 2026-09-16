@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230">
+  <defs>
+    <linearGradient id="aqibg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151030"/>
+      <stop offset="100%" stop-color="#0d0a1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="230" fill="url(#aqibg)"/>
+  <path d="M110 150 A90 90 0 0 1 290 150" fill="none" stroke="#1d1836" stroke-width="18"/>
+  <path d="M110 150 A90 90 0 0 1 250 75" fill="none" stroke="#00cea8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M250 75 A90 90 0 0 1 290 150" fill="none" stroke="#f272c8" stroke-width="18" stroke-linecap="round"/>
+  <line x1="200" y1="150" x2="245" y2="95" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="150" r="7" fill="#ffffff"/>
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="0"></text>
+  <text x="200" y="218" font-family="Arial, sans-serif" font-size="13" fill="#aaa6c3" text-anchor="middle" letter-spacing="1">AIR QUALITY INDEX</text>
+</svg>

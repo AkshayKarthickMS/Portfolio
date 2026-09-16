@@ -2,13 +2,13 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { github as githubIcon, linkedin as linkedinIcon, gmail as gmailIcon } from "../assets";
-
-const CONTACT_EMAIL = "akshaykarthickms@gmail.com";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import LazyMount from "./LazyMount";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+
+const CONTACT_EMAIL = "akshaykarthickms@gmail.com";
 
 const Contact = () => {
   const formRef = useRef();
@@ -62,7 +62,9 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert(
+            `Something went wrong sending the message. Please email me directly at ${CONTACT_EMAIL} instead.`
+          );
         }
       );
   };
@@ -115,14 +117,6 @@ const Contact = () => {
         alt='Email'
         className='w-10 h-10'
       />
-    </a>
-    <a
-      href='https://leetcode.com/u/AkshayKarthickMS/'
-      target='_blank'
-      rel='noopener noreferrer'
-      className='h-10 flex items-center justify-center rounded-full shadow-md px-4 bg-tertiary text-white text-[14px] font-medium'
-    >
-      LeetCode
     </a>
     </div>
         <form

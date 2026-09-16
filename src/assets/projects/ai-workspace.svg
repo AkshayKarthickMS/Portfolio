@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230">
+  <defs>
+    <linearGradient id="awbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151030"/>
+      <stop offset="100%" stop-color="#0d0a1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="230" fill="url(#awbg)"/>
+  <g stroke="#804dee" stroke-width="1.5" opacity="0.6">
+    <line x1="200" y1="115" x2="90" y2="60"/>
+    <line x1="200" y1="115" x2="90" y2="170"/>
+    <line x1="200" y1="115" x2="310" y2="55"/>
+    <line x1="200" y1="115" x2="320" y2="115"/>
+    <line x1="200" y1="115" x2="300" y2="180"/>
+  </g>
+  <circle cx="200" cy="115" r="22" fill="#804dee"/>
+  <g fill="#00cea8">
+    <circle cx="90" cy="60" r="12"/>
+    <circle cx="90" cy="170" r="12"/>
+    <circle cx="320" cy="115" r="12"/>
+  </g>
+  <g fill="#f272c8">
+    <circle cx="310" cy="55" r="12"/>
+    <circle cx="300" cy="180" r="12"/>
+  </g>
+  <text x="200" y="218" font-family="Arial, sans-serif" font-size="13" fill="#aaa6c3" text-anchor="middle" letter-spacing="1">MULTI-AGENT AI PLATFORM</text>
+</svg>

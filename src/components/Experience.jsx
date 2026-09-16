@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
+import SectionGlow from "./SectionGlow";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -40,6 +41,11 @@ const ExperienceCard = ({ experience }) => {
         >
           {experience.company_name}
         </p>
+        {experience.location && (
+          <p className='mt-1 text-[13px] text-[#804dee] font-medium flex items-center gap-1'>
+            <span aria-hidden>📍</span> {experience.location}
+          </p>
+        )}
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
@@ -59,6 +65,8 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
+      <SectionGlow colors={["#4b2aa0", "#804dee"]} side="left" />
+
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far

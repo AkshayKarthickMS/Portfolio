@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import Tilt from "./Tilt";
+import SectionGlow from "./SectionGlow";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -15,6 +16,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_demo_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -35,9 +37,19 @@ const ProjectCard = ({
             decoding='async'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end gap-2 m-3 card-img_hover'>
+            {live_demo_link && (
+              <div
+                onClick={() => window.open(live_demo_link, "_blank")}
+                title='Live demo'
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer text-white text-[16px]'
+              >
+                🔗
+              </div>
+            )}
             <div
               onClick={() => window.open(source_code_link, "_blank")}
+              title='Source code'
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
@@ -72,6 +84,8 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
+      <SectionGlow colors={["#f272c8", "#804dee"]} side="left" />
+
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>

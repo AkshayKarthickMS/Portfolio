@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230">
+  <defs>
+    <linearGradient id="goldbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#151030"/>
+      <stop offset="100%" stop-color="#0d0a1f"/>
+    </linearGradient>
+    <linearGradient id="goldbar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2C811"/>
+      <stop offset="100%" stop-color="#a67c00"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="230" fill="url(#goldbg)"/>
+  <polyline points="40,170 90,150 140,160 190,110 240,125 290,70 340,90" fill="none" stroke="#F2C811" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#F2C811">
+    <circle cx="190" cy="110" r="4"/>
+    <circle cx="290" cy="70" r="4"/>
+  </g>
+  <g transform="translate(280,140)">
+    <polygon points="0,0 46,0 38,34 8,34" fill="url(#goldbar)" stroke="#8a6a00" stroke-width="1.5"/>
+    <text x="23" y="22" font-family="Arial, sans-serif" font-size="12" fill="#4a3900" text-anchor="middle" font-weight="700">Au</text>
+  </g>
+  <text x="200" y="218" font-family="Arial, sans-serif" font-size="13" fill="#aaa6c3" text-anchor="middle" letter-spacing="1">LSTM PRICE FORECASTING</text>
+</svg>
