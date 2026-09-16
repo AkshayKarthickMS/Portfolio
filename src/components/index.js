@@ -5,6 +5,7 @@ import About from "./About";
 import Education from "./Education";
 import Tech from "./Tech";
 import Experience from "./Experience";
+import Collaborations from "./Collaborations";
 import Works from "./Works";
 import Achievements from "./Achievements";
 import Feedbacks from "./Feedbacks";
@@ -19,6 +20,7 @@ export {
   Education,
   Tech,
   Experience,
+  Collaborations,
   Works,
   Achievements,
   Feedbacks,

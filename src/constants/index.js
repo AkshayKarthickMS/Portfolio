@@ -26,6 +26,7 @@ import {
   dsignz,
   usim,
   icliniqIcon,
+  datharm,
   cit,
   sgn,
   python,
@@ -125,7 +126,25 @@ const experiences = [
     ],
   },
   {
-    title: "Academic Project Collaborator",
+    title: "IoT Software Intern",
+    company_name: "Universiti Sains Islam Malaysia",
+    location: "Nilai, Malaysia",
+    icon: usim,
+    iconBg: "#151030",
+    date: "July 2024",
+    certificateFile: "/certificates/usim-internship-certificate.pdf",
+    points: [
+      "Built an RFID-based livestock management platform supporting animal registration, health monitoring, and feed planning using Python, Flask, SQLite, Arduino, REST APIs, and WebSocket communication.",
+      "Gathered requirements directly from farm operators, reducing manual record-keeping time by 95% in a pilot farm.",
+    ],
+  },
+];
+
+// Academic project collaborations done as part of CIT's curriculum — recognized with
+// certificates of appreciation/recognition, not formal employment internships.
+const collaborations = [
+  {
+    title: "AI-Driven Medical Inquiry Response System",
     company_name: "Orane Healthcare (iCliniq)",
     location: "Remote",
     icon: icliniqIcon,
@@ -138,16 +157,16 @@ const experiences = [
     ],
   },
   {
-    title: "IoT Software Intern",
-    company_name: "Universiti Sains Islam Malaysia",
-    location: "Nilai, Malaysia",
-    icon: usim,
-    iconBg: "#151030",
-    date: "July 2024",
-    certificateFile: "/certificates/usim-internship-certificate.pdf",
+    title: "AI-Powered MCHTrack — Zero-Dose Immunization Analytics",
+    company_name: "Datharm Foundation for Social Impact",
+    location: "Remote (Nigeria)",
+    icon: datharm,
+    iconBg: "#0d0a1f",
+    date: "June 2025 - March 2026",
+    certificateFile: "/certificates/datharm-foundation-recognition-certificate.pdf",
     points: [
-      "Built an RFID-based livestock management platform supporting animal registration, health monitoring, and feed planning using Python, Flask, SQLite, Arduino, REST APIs, and WebSocket communication.",
-      "Gathered requirements directly from farm operators, reducing manual record-keeping time by 95% in a pilot farm.",
+      "Recognized by Datharm Foundation and Coimbatore Institute of Technology for contribution to AI-driven analysis of maternal and child health data through the MCHTrack platform, as part of academic curriculum.",
+      "Led a team of 4 to deliver an immunization analytics platform processing 1,100+ beneficiary records and 80K+ facility visit records, improving dropout-prediction accuracy from a 64% baseline to 84.4%.",
     ],
   },
 ];
@@ -235,6 +254,7 @@ const codingProfiles = [
 ];
 
 // Draft quotes generated from resume context for Akshay to review/edit before publishing.
+// Ordered reverse-chronologically by the underlying engagement's timeframe.
 const testimonials = [
   {
     testimonial:
@@ -242,48 +262,6 @@ const testimonials = [
     name: "Dr. Valliappan Raman",
     designation: "HOD",
     company: "Coimbatore Institute of Technology",
-  },
-  {
-    testimonial:
-      "The immunization analytics platform Akshay's team built for us processed over 80,000 facility visit records and directly shaped how our field volunteers prioritized outreach. His ability to translate messy health data into decisions our team could act on was invaluable.",
-    name: "Dr. Amina Ahmad Ngogo",
-    designation: "CEO",
-    company: "Datharm Foundation",
-  },
-  {
-    testimonial:
-      "Working alongside Akshay on the dropout-prediction models was a masterclass in iteration — he took our baseline from 64% to 84% accuracy without losing sight of what the numbers meant for real patients.",
-    name: "Rahimat",
-    designation: "Data Scientist",
-    company: "Datharm Foundation",
-  },
-  {
-    testimonial:
-      "Akshay built the RAG pipeline behind our medical assistant with real rigor — chunking, embeddings, and retrieval were all tuned against actual doctor feedback, not just benchmark accuracy. That attention to clinical validation is rare in an intern.",
-    name: "Niharicka",
-    designation: "AI Engineer",
-    company: "iCliniq",
-  },
-  {
-    testimonial:
-      "Akshay took our AWS spend from a black box to a set of dashboards leadership actually trusted. His ETL pipelines and cost-analytics work improved our allocation accuracy by 30% — a real, measurable win.",
-    name: "Dinesh Chidambaram",
-    designation: "Co-Founder",
-    company: "Dsignz Media",
-  },
-  {
-    testimonial:
-      "What impressed me most was how Akshay approached the cloud assistant project: he didn't just wire up an LLM, he built proper retrieval infrastructure over our documentation that cut our team's lookup time by 80%.",
-    name: "Veera Sundari Mani",
-    designation: "Co-Founder",
-    company: "Dsignz Media",
-  },
-  {
-    testimonial:
-      "Akshay's RFID livestock platform was built from real conversations with our farm operators, not assumptions. That grounding is why it cut record-keeping time by 95% in our pilot.",
-    name: "Dr. Sundresan Perumal",
-    designation: "Internship Supervisor",
-    company: "Universiti Sains Islam Malaysia",
   },
   {
     testimonial:
@@ -305,6 +283,55 @@ const testimonials = [
     name: "Ajita Fairen",
     designation: "Project Coworker",
     company: "Caterpillar Inc.",
+  },
+  {
+    testimonial:
+      "The immunization analytics platform Akshay's team built for us processed over 80,000 facility visit records and directly shaped how our field volunteers prioritized outreach. His ability to translate messy health data into decisions our team could act on was invaluable.",
+    name: "Dr. Amina Ahmad Ngogo",
+    designation: "CEO",
+    company: "Datharm Foundation",
+  },
+  {
+    testimonial:
+      "Working alongside Akshay on the dropout-prediction models was a masterclass in iteration — he took our baseline from 64% to 84% accuracy without losing sight of what the numbers meant for real patients.",
+    name: "Rahimat",
+    designation: "Data Scientist",
+    company: "Datharm Foundation",
+  },
+  {
+    testimonial:
+      "Akshay took our AWS spend from a black box to a set of dashboards leadership actually trusted. His ETL pipelines and cost-analytics work improved our allocation accuracy by 30% — a real, measurable win.",
+    name: "Dinesh Chidambaram",
+    designation: "Co-Founder",
+    company: "Dsignz Media",
+  },
+  {
+    testimonial:
+      "What impressed me most was how Akshay approached the cloud assistant project: he didn't just wire up an LLM, he built proper retrieval infrastructure over our documentation that cut our team's lookup time by 80%.",
+    name: "Veera Sundari Mani",
+    designation: "Co-Founder",
+    company: "Dsignz Media",
+  },
+  {
+    testimonial:
+      "Akshay built the RAG pipeline behind our medical assistant with real rigor — chunking, embeddings, and retrieval were all tuned against actual doctor feedback, not just benchmark accuracy. That attention to clinical validation is rare to see in a student collaborator.",
+    name: "Dr. Niharicka Gopalakrishnan",
+    designation: "Business Analyst",
+    company: "iCliniq",
+  },
+  {
+    testimonial:
+      "Akshay picked up our medical retrieval stack fast and wasn't afraid to push back on approaches that wouldn't hold up with real doctors reviewing the output. The FAISS indexing work he did over our literature set was genuinely solid.",
+    name: "Shriram Arvinth",
+    designation: "AI Developer",
+    company: "iCliniq",
+  },
+  {
+    testimonial:
+      "Akshay's RFID livestock platform was built from real conversations with our farm operators, not assumptions. That grounding is why it cut record-keeping time by 95% in our pilot.",
+    name: "Dr. Sundresan Perumal",
+    designation: "Internship Supervisor",
+    company: "Universiti Sains Islam Malaysia",
   },
 ];
 
@@ -470,6 +497,7 @@ export {
   services,
   technologies,
   experiences,
+  collaborations,
   education,
   certifications,
   achievements,

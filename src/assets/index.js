@@ -44,6 +44,7 @@ import caterpillar from "./company/caterpillar.svg";
 import dsignz from "./company/dsignz.svg";
 import usim from "./company/usim.svg";
 import icliniqIcon from "./company/icliniq.svg";
+import datharm from "./company/datharm.svg";
 
 import cit from "./education/cit.svg";
 import sgn from "./education/sgn.svg";
@@ -106,6 +107,7 @@ export {
   dsignz,
   usim,
   icliniqIcon,
+  datharm,
   cit,
   sgn,
   mchtrack,

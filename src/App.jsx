@@ -5,6 +5,7 @@ import {
   Contact,
   Education,
   Experience,
+  Collaborations,
   Achievements,
   Feedbacks,
   Hero,
@@ -27,6 +28,7 @@ const App = () => {
         <About />
         <Education />
         <Experience />
+        <Collaborations />
         <Tech />
         <Works />
         <Achievements />
