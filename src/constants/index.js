@@ -336,21 +336,7 @@ const testimonials = [
 ];
 
 const projects = [
-  {
-    name: "ShopSphere — Event-Driven E-Commerce Microservices Platform",
-    description:
-      "Built and deployed a 9-service microservices platform with JWT auth, an event-driven Kafka order saga (optimistic locking, idempotent consumers, DLTs), Redis caching, and a React frontend; verified end-to-end via Docker Compose with 64 automated tests.",
-    tags: [
-      { name: "spring-boot", color: "blue-text-gradient" },
-      { name: "kafka", color: "green-text-gradient" },
-      { name: "jwt", color: "pink-text-gradient" },
-      { name: "kubernetes", color: "blue-text-gradient" },
-      { name: "j-unit", color: "green-text-gradient" },
-      { name: "redis", color: "pink-text-gradient" },
-    ],
-    image: mchtrack,
-    source_code_link: "https://github.com/AkshayKarthickMS/Java-Microservices",
-  },
+
   {
     name: "AI-Powered MCHTrack — Zero-Dose Immunization Analytics",
     description:
