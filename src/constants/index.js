@@ -490,6 +490,19 @@ const projects = [
     source_code_link: "https://github.com/AkshayKarthickMS/Geofencing",
     live_demo_link: "https://geofencing-offer.netlify.app/",
   },
+  //   {
+  //   name: "Gold Price Prediction",
+  //   description:
+  //     "An LSTM-based time-series forecaster for daily gold closing prices, trained on 2013-2023 historical data and evaluated on a held-out 2022 test period.",
+  //   tags: [
+  //     { name: "python", color: "blue-text-gradient" },
+  //     { name: "lstm", color: "green-text-gradient" },
+  //     { name: "timeseries", color: "pink-text-gradient" },
+  //   ],
+  //   image: gold,
+  //   source_code_link: "https://github.com/AkshayKarthickMS/Gold-Price-Prediction",
+  //   live_demo_link: "https://gold-price-prediction-akshaykarthick.lovable.app/",
+  // },
 ];
 
 export {
